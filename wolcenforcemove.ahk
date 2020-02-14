@@ -7,6 +7,13 @@ SetTitleMatchMode, 2
     if ErrorLevel
         Send, {NumpadDiv down}
 
+	Loop {
+		Send, {LAlt down}
+		Sleep, 20
+		Send, {LAlt up}
+		break
+	}
+
 	while GetKeyState("LButton", "P") {
 		Send, {LAlt down}
 		Sleep, 20
